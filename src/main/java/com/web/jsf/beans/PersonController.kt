@@ -7,10 +7,6 @@ import javax.faces.context.FacesContext
 import javax.inject.Inject
 import javax.inject.Named
 
-/**
-
- * @author armenar
- */
 @Named
 @SessionScoped
 class PersonController : Serializable {
