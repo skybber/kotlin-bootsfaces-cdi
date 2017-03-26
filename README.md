@@ -1,2 +1,2 @@
 # kotlin-bootsfaces-cdi
-Using Kotlin+bootsfaces+cdi with HotswapAgent
+Using HotswapAgent with Kotlin+bootsfaces+cdi project
