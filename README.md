@@ -21,4 +21,4 @@ Simple Kotlin project using CDI (OWB) on backend and BootsFaces on frontend.
 </project-modules>
 
 ### Known issues:
-If dcevm is used, eclipse breakpoints should be reinstaled after redefinition using autoHotswap.
+If dcevm is used together with HotswapAgent (autoHotswap=true), then eclipse breakpoints must be reinstaled after redefinition.
