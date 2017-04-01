@@ -12,17 +12,17 @@ import javax.inject.Named
 class PersonController : Serializable {
 
     @Inject
-    var personRepository: PersonRepository? = null
+    lateinit var personRepository: PersonRepository
 
     @Inject
-    var personForm: PersonForm? = null
+    lateinit var personForm: PersonForm
 
     fun savePerson() {
-        personRepository!!.save(Person(personForm!!.firstName, personForm!!.lastName, personForm!!.email))
+        personRepository.save(Person(personForm.firstName, personForm.lastName, personForm.email))
     }
 
     fun getPersonList() : List<Person> {
-       return personRepository!!.personList
+       return personRepository.personList
     }
 
     companion object {
